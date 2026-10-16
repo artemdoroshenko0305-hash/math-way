@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #0d0d12;
+    color: #f3f4f6;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+}
+
+/* Деликатная математическая сетка на фоне */
+.math-bg-grid {
+  background-size: 36px 36px;
+  background-image: 
+    linear-gradient(to right, rgba(168, 85, 247, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(168, 85, 247, 0.04) 1px, transparent 1px);
+}
+
+.math-inner-grid {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(251, 191, 36, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(251, 191, 36, 0.03) 1px, transparent 1px);
+}
